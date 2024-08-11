@@ -43,7 +43,7 @@ int main() {
   strm << getenv("HOME") << "/.local/webserver/server.conf";
   cout << strm.str();
   
-  Properties props{getProperty("welcome", "\n\x1B[91mHello bitch\x1B[93m", strm.str()), getProperty("host", "0.0.0.0", strm.str()), getProperty("port", "12341", strm.str()), getProperty("clients", "100", strm.str())};
+  Properties props{T::getProperty("welcome", "\n\x1B[91mHello bitch\x1B[93m", strm.str()), T::getProperty("host", "0.0.0.0", strm.str()), T::getProperty("port", "12341", strm.str()), T::getProperty("clients", "100", strm.str())};
   cout << props.welcome << endl;
   
   int sockfd {socket(PF_INET, SOCK_STREAM, 0)};

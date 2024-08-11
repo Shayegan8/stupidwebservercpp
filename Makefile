@@ -1,2 +1,2 @@
 Build:
-	g++ -o sex src/server.cpp src/tools.cpp src/tools.h
+	g++ -o sex src/server.cpp src/tools.h
